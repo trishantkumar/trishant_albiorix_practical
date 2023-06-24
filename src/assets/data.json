@@ -3,33 +3,24 @@
         "name": "Tanu",
         "email": "tanu@gmail.com",
         "mobile": "012355555",
-        "dob": "2023-06-15",
-        "createdAt": "2023-06-23T14:59:41.328Z",
-        "updatedAt": "2023-06-23T14:59:41.328Z",
-        "__v": 0
+        "dob": "2023-06-15"
     },
     {
         "name": "Trishant Shishodia",
         "email": "trishantkumar@gmail.com",
         "mobile": "0123456789",
-        "dob": "2023-06-14",
-        "createdAt": "2023-06-23T04:29:07.402Z",
-        "updatedAt": "2023-06-23T14:10:23.481Z"
+        "dob": "2023-06-14"
     },
     {
         "name": "Rash",
         "email": "rash@gmail.com",
         "mobile": "5641239870",
-        "dob": "2023-06-23",
-        "createdAt": "2023-06-23T14:02:15.323Z",
-        "updatedAt": "2023-06-23T14:02:15.323Z"
+        "dob": "2023-06-23"
     },
     {
         "name": "Prashant",
         "email": "prashant@yahoo.com",
         "mobile": "888888888",
-        "dob": "1997-05-15",
-        "createdAt": "2022-05-19T12:05:15.323Z",
-        "updatedAt": "2022-05-19T12:05:15.323Z"
+        "dob": "1997-05-15"
     }
 ]

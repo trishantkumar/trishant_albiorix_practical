@@ -39,7 +39,7 @@ exports.user_create = function (req, res) {
 
 exports.fetch_user = function (req, res) {
     User.find().then(result=>{
-        result = result.sort((date1, date2) => date2.updatedAt - date1.updatedAt)
+        result = result.sort((date1, date2) => date2.createdAt - date1.createdAt)
         res.status(200).json({
             users: result
         });

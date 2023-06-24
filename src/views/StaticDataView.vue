@@ -1,7 +1,7 @@
 <template>
   <div class="main_container" v-if="userData">
       <div class="primary_section">
-        <input type="text" placeholder="Search by name, email or mobile" v-model="searchQuery" />
+        <input type="text" class="search" placeholder="Search by name, email or mobile" v-model="searchQuery" />
         <button @click="openUserDetailsModal(userDetails)">Add New User</button>
       </div>
       <table>
@@ -203,7 +203,7 @@ export default {
   },
   computed: {
     filterUsersList() {
-      if(this.searchQuery.charAt(3) != '') {
+      if(this.searchQuery.charAt(2) != '') {
         var filterData =[]
         this.userData.forEach(data => {
           if (data.name.toLowerCase().includes(this.searchQuery.toLowerCase()) ||
@@ -222,6 +222,13 @@ export default {
 }
 </script>
 <style scoped>
+input.search {
+  width: 260px;
+  border: 1px solid #555;
+  display: block;
+  padding: 9px 4px 9px 40px;
+  background: transparent url("./../assets/icons8-search-20.svg") no-repeat 13px;
+}
 button{
   cursor: pointer;
 }
