@@ -9,8 +9,8 @@ export default ({
       getUsers: (state) => state.users,
     },
     mutations: {
-      SET_USERS(state, flag) {
-        state.users = flag;
+      SET_USERS(state, data) {
+        state.users = data;
       },
     },
     actions: {

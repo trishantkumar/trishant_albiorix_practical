@@ -121,7 +121,7 @@ export default {
     }
   },
   async mounted() {
-    this.currentDate = new Date().toJSON().slice(0, 10);
+    this.currentDate = new Date().toJSON().slice(0, 10); // set max input field date to today
     await this.$store.dispatch("fetchUsers");
     this.userData = await this.getUsers.users;
   },

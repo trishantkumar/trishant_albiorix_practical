@@ -120,7 +120,7 @@ export default {
     }
   },
   async mounted() {
-    this.currentDate = new Date().toJSON().slice(0, 10);
+    this.currentDate = new Date().toJSON().slice(0, 10); // set max input field date to today
     this.userData = await this.getStaticUsers;
   },
   methods: {

@@ -10,7 +10,6 @@ const routes = [
     name: 'home',
     component: HomeView
   },
-  // created this about route for demo purposes
   {
     path: '/static',
     name: 'static',
