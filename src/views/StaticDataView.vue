@@ -189,6 +189,11 @@ export default {
         })
       }
       else {
+        const currentTime = Date.now();
+        const dateObject = new Date(currentTime);
+        const currentDateTime = dateObject;
+
+        this.userDetails.createdAt = currentDateTime
         this.$store.dispatch('addNewStaticUser', this.userDetails).then(async () => {
           this.closeModal();
           this.$swal.fire({

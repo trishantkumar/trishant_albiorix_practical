@@ -4,7 +4,7 @@ export default ({
       users: userData
     },
     getters: {
-      getStaticUsers: (state) => state.users,
+      getStaticUsers: (state) => state.users = state.users.sort((date1, date2) => new Date(date2.createdAt) - new Date(date1.createdAt)),
     },
     mutations: {
       SET_USERS(state, users) {
