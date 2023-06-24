@@ -97,7 +97,6 @@
   </div>
 </template>
 <script>
-import userData from './../assets/data.json'
 import { mapGetters } from 'vuex';
 
 export default {
@@ -106,7 +105,7 @@ export default {
     return {
       isUserDetailsModalVisible: false,
       isUserDeleteModal: false,
-      userData: userData,
+      userData: [],
       userDetails: {
         "name" : "",
         "email" : "",
@@ -149,7 +148,7 @@ export default {
         this.modalType = "addNew"
       }
       this.isUserDetailsModalVisible = true;
-      this.userDetails = user;
+      this.userDetails = {...user};
     },
     closeModal() {
       this.isUserDetailsModalVisible = false;

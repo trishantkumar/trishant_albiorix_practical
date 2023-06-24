@@ -154,7 +154,7 @@ export default {
         this.modalType = "addNew"
       }
       this.isUserDetailsModalVisible = true;
-      this.userDetails = user;
+      this.userDetails = {...user};
     },
     closeModal() {
       this.isUserDetailsModalVisible = false;
